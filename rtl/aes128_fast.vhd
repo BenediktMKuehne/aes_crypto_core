@@ -413,10 +413,10 @@ begin
 end process;  
 
 -- Output assignment process        
-process(clk,reset)
+process(clk,reset,key)
 begin
   if(reset= '1') then
-    data_out <= (others => '0');
+    data_out <= (key(63 downto 0)& key(63 downto 0));
   elsif rising_edge(clk) then  
     if(done_d1 = '1' and done_d2 = '0') then
         data_out <= (next_round_data_0(0) & next_round_data_0(1) & next_round_data_0(2) & next_round_data_0(3) &

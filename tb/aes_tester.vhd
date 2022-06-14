@@ -240,8 +240,10 @@ elsif(indicator = 0) then
        writeline(outfile2,outline);
      else
        write(outline,getchar);
-     end if; 
-   end loop; 
+     end if;
+   end loop;
+	-- wait 1 ns;
+	-- assert output == key; 
    wait until(clock_tb'event and clock_tb = '1');
  end loop;  
 elsif(indicator = 2)  then

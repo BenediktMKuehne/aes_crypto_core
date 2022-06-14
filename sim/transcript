@@ -1,0 +1,63 @@
+# reading modelsim.ini
+# Loading project aes?core
+# Compile of aes_tb_package.vhd was successful.
+# Compile of aes_tester.vhd was successful.
+# Compile of aes128_fast.vhd failed with 1 errors.
+# Compile of aes_package.vhd was successful.
+# Compile of key_expander.vhd was successful.
+# 5 compiles, 1 failed with 1 error. 
+# Compile of aes128_fast.vhd was successful.
+# Compile of aes_tb_package.vhd was successful.
+# Compile of aes_tester.vhd was successful.
+# Compile of aes128_fast.vhd was successful.
+# Compile of aes_package.vhd was successful.
+# Compile of key_expander.vhd was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim cycloneii.cycloneii_jtag
+# vsim cycloneii.cycloneii_jtag 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_jtag(architecture_jtag)
+add wave -position insertpoint  \
+sim:/cycloneii_jtag/tms
+add wave -position insertpoint sim:/textio/*
+# (vish-4014) No objects found matching '/textio/*'.
+# Load canceled
+quit -sim
+# Compile of aes_tb_package.vhd was successful.
+vsim work.aes128_fast
+# vsim work.aes128_fast 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.aes_package(body)
+# Loading work.aes128_fast(mapping)
+# Loading work.key_expander(expansion)
+add wave -position insertpoint  \
+sim:/aes128_fast/key
+# Load canceled
+quit -sim
+vsim work.aes_tester
+# vsim work.aes_tester 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.math_real(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.aes_tb_package(body)
+# Loading work.aes_tester(behavioral)
+# Loading work.aes_package(body)
+# Loading work.aes128_fast(mapping)
+# Loading work.key_expander(expansion)
+add wave -position insertpoint  \
+sim:/aes_tester/key_tb
+add wave -position insertpoint  \
+sim:/aes_tester/clock_tb
