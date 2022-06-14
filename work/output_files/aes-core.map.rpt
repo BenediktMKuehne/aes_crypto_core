@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aes-core
-Tue Jun 14 15:37:11 2022
+Tue Jun 14 16:02:25 2022
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,7 +44,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jun 14 15:37:11 2022           ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun 14 16:02:24 2022           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; aes-core                                        ;
 ; Top-level Entity Name              ; aes128_fast                                     ;
@@ -289,7 +289,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:04:27     ;
+; Top            ; 00:04:29     ;
 +----------------+--------------+
 
 
@@ -299,7 +299,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Jun 14 15:32:19 2022
+    Info: Processing started: Tue Jun 14 15:57:31 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aes-core -c aes-core
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file /home/cylox/aes_crypto_core/tb/aes_tester.vhd
@@ -318,7 +318,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/c
     Info (12022): Found design unit 1: aes128_fast-mapping
     Info (12023): Found entity 1: aes128_fast
 Info (12127): Elaborating entity "aes128_fast" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at aes128_fast.vhd(419): signal "key" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (12128): Elaborating entity "key_expander" for hierarchy "key_expander:expand_key"
 Info (276014): Found 8 instances of uninferred RAM logic
     Info (276007): RAM logic "key_expander:expand_key|Ram5" is uninferred due to asynchronous read logic
@@ -464,10 +463,10 @@ Info (21057): Implemented 10385 device resources after synthesis - the final res
     Info (21058): Implemented 133 input pins
     Info (21059): Implemented 129 output pins
     Info (21061): Implemented 10123 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 131 warnings
-    Info: Peak virtual memory: 401 megabytes
-    Info: Processing ended: Tue Jun 14 15:37:11 2022
-    Info: Elapsed time: 00:04:52
-    Info: Total CPU time (on all processors): 00:04:52
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 130 warnings
+    Info: Peak virtual memory: 397 megabytes
+    Info: Processing ended: Tue Jun 14 16:02:25 2022
+    Info: Elapsed time: 00:04:54
+    Info: Total CPU time (on all processors): 00:04:53
 
 

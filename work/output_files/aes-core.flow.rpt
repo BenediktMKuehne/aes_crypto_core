@@ -1,5 +1,5 @@
 Flow report for aes-core
-Tue Jun 14 15:37:39 2022
+Tue Jun 14 16:02:25 2022
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Tue Jun 14 15:37:39 2022          ;
+; Flow Status                        ; Successful - Tue Jun 14 16:02:24 2022           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; aes-core                                        ;
 ; Top-level Entity Name              ; aes128_fast                                     ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C5T144C8                                     ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 9,995 / 4,608 ( 217 % )                         ;
-;     Total combinational functions  ; 9,735 / 4,608 ( 211 % )                         ;
-;     Dedicated logic registers      ; 786 / 4,608 ( 17 % )                            ;
+; Total logic elements               ; 9,994                                           ;
+;     Total combinational functions  ; 9,734                                           ;
+;     Dedicated logic registers      ; 786                                             ;
 ; Total registers                    ; 786                                             ;
-; Total pins                         ; 262 / 89 ( 294 % )                              ;
+; Total pins                         ; 262                                             ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 119,808 ( 0 % )                             ;
-; Embedded Multiplier 9-bit elements ; 0 / 26 ( 0 % )                                  ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                                   ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/14/2022 15:32:20 ;
+; Start date & time ; 06/14/2022 15:57:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; aes-core            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.165521354002594      ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.165521505202745      ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL) ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                     ; --            ; --          ; --             ;
@@ -93,9 +93,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:04:49     ; 1.0                     ; 398 MB              ; 00:04:48                           ;
-; Fitter               ; 00:00:23     ; 1.0                     ; 405 MB              ; 00:00:22                           ;
-; Total                ; 00:05:12     ; --                      ; --                  ; 00:05:10                           ;
+; Analysis & Synthesis ; 00:04:50     ; 1.0                     ; 394 MB              ; 00:04:50                           ;
+; Total                ; 00:04:50     ; --                      ; --                  ; 00:04:50                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -105,7 +104,6 @@ applicable agreement for further details.
 ; Module Name          ; Machine Hostname      ; OS Name      ; OS Version ; Processor type ;
 +----------------------+-----------------------+--------------+------------+----------------+
 ; Analysis & Synthesis ; cylox-virtual-machine ; Ubuntu 22.04 ; 22         ; x86_64         ;
-; Fitter               ; cylox-virtual-machine ; Ubuntu 22.04 ; 22         ; x86_64         ;
 +----------------------+-----------------------+--------------+------------+----------------+
 
 
@@ -113,7 +111,6 @@ applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off aes-core -c aes-core
-quartus_fit --read_settings_files=off --write_settings_files=off aes-core -c aes-core
 
 
 
