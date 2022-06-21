@@ -1,0 +1,322 @@
+# Project file /home/cylox/aes_crypto_core/work/vsim.mpf was not found.
+# Unable to open project.
+# Loading project hack
+vsim -mdelsimini sim/modelsim.ini
+# ** Error: (vish-3296) Unknown option '-mdelsimini'.
+# Use the -help option for complete vsim usage.
+# Error loading design
+vsim -modelsimini sim/modelsim.ini
+# No design specified
+vsim -modelsimini sim/modelsim.ini rtl/aes128_fast.vhd
+# OpenFile rtl/aes128_fast.vhd 
+# Compile of aes128_fast.vhd failed with 1 errors.
+# Compile of aes_package.vhd was successful.
+# Compile of key_expander.vhd was successful.
+# 3 compiles, 1 failed with 1 error. 
+# Compile of aes128_fast.vhd was successful.
+# Compile of aes128_fast.vhd was successful.
+# Compile of aes_package.vhd was successful.
+# Compile of key_expander.vhd was successful.
+# 3 compiles, 0 failed with no errors. 
+# Compile of aes128_fast.vhd was successful.
+# Compile of aes_package.vhd was successful.
+# Compile of key_expander.vhd was successful.
+# 3 compiles, 0 failed with no errors. 
+# Compile of aes128_fast.vhd was successful.
+# Compile of aes_package.vhd was successful.
+# Compile of key_expander.vhd was successful.
+# Compile of aes128_asic_dly failed with 1 errors.
+# Compile of aes128_spartan_area failed with 1 errors.
+# Compile of aes128_spartan_delay failed with 1 errors.
+# 6 compiles, 3 failed with 3 errors. 
+# Compile of aes128_fast.vhd was successful.
+# Compile of aes_package.vhd was successful.
+# Compile of key_expander.vhd was successful.
+# Compile of aes_fips_mctester.vhd was successful.
+# Compile of aes_fips_tester.vhd was successful.
+# Compile of aes_tb_package.vhd was successful.
+# Compile of aes_tester.vhd was successful.
+# 7 compiles, 0 failed with no errors. 
+vsim -modelsimini sim/modelsim.ini work.aes_tb_package
+# vsim -modelsimini sim/modelsim.ini work.aes_tb_package 
+# ** Fatal: (vsim-3370) Top-level design unit 'aes_tb_package' must be an ENTITY, CONFIGURATION , MODULE or PROGRAM
+#    Time: 0 ps  Iteration: 0  Root: / File: NOFILE
+# FATAL ERROR while loading design
+# Error loading design
+vsim -modelsimini sim/modelsim.ini work.aes128_fast
+# vsim -modelsimini sim/modelsim.ini work.aes128_fast 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.aes_package(body)
+# Loading work.aes128_fast(mapping)
+# Loading work.key_expander(expansion)
+add wave -position insertpoint  \
+sim:/aes128_fast/data_out
+# Load canceled
+force -freeze sim:/aes128_fast/data_out UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU 0
+add wave -position insertpoint  \
+sim:/aes128_fast/clk
+quit -sim
+# Compile of aes128_fast.vhd was successful.
+# Compile of aes_package.vhd was successful.
+# Compile of key_expander.vhd was successful.
+# Compile of aes_fips_mctester.vhd was successful.
+# Compile of aes_fips_tester.vhd was successful.
+# Compile of aes_tb_package.vhd was successful.
+# Compile of aes_tester.vhd was successful.
+# 7 compiles, 0 failed with no errors. 
+# Load canceled
+vsim -modelsimini sim/modelsim.ini work.aes_fips_tester
+# vsim -modelsimini sim/modelsim.ini work.aes_fips_tester 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.math_real(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std_developerskit.std_iopak(body)
+# Loading work.aes_fips_tester(behavioral)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.aes_package(body)
+# Loading work.aes128_fast(mapping)
+# Loading work.key_expander(expansion)
+# ** Error: (vsim-7) Failed to open VHDL file "ecb_tbl.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /aes_fips_tester
+# ** Error: (vsim-7) Failed to open VHDL file "ecb_vk.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /aes_fips_tester
+# ** Error: (vsim-7) Failed to open VHDL file "ecb_vt.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /aes_fips_tester
+add wave -position insertpoint  \
+sim:/aes_fips_tester/clock_tb
+add wave -position insertpoint  \
+sim:/aes_fips_tester/data_out_tb
+add wave -position insertpoint  \
+sim:/aes_fips_tester/data_in_tb
+add wave -position insertpoint  \
+sim:/aes_fips_tester/key_tb
+run -all
+# ** Fatal: (vsim-7) Failed to open VHDL file "ecb_tbl.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 150 ns  Iteration: 0  Process: /aes_fips_tester/line__108 File: /home/cylox/aes_crypto_core/tb/aes_fips_tester.vhd
+# Fatal error in Process line__108 at /home/cylox/aes_crypto_core/tb/aes_fips_tester.vhd line 132
+# 
+# HDL call sequence:
+# Stopped at /home/cylox/aes_crypto_core/tb/aes_fips_tester.vhd 132 Process line__108
+# 
+run -continue
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at /home/cylox/aes_crypto_core/tb/aes_fips_tester.vhd 132 Process line__108
+# 
+vsim -modelsimini sim/modelsim.ini work.aes_tb_package
+# vsim -modelsimini sim/modelsim.ini work.aes_tb_package 
+# ** Fatal: (vsim-3370) Top-level design unit 'aes_tb_package' must be an ENTITY, CONFIGURATION , MODULE or PROGRAM
+#    Time: 0 ps  Iteration: 0  Root: / File: NOFILE
+# FATAL ERROR while loading design
+# Error loading design
+vsim -modelsimini sim/modelsim.ini work.aes_tester
+# vsim -modelsimini sim/modelsim.ini work.aes_tester 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.math_real(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.aes_tb_package(body)
+# Loading work.aes_tester(behavioral)
+# Loading work.aes_package(body)
+# Loading work.aes128_fast(mapping)
+# Loading work.key_expander(expansion)
+# ** Error: (vsim-7) Failed to open VHDL file "text_in.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tester
+# ** Error: (vsim-7) Failed to open VHDL file "encoded_text.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tester
+# ** Error: (vsim-7) Failed to open VHDL file "aes_data_in.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tester
+add wave -position insertpoint  \
+sim:/aes_tester/data_in_tb
+add wave -position insertpoint  \
+sim:/aes_tester/data_out_tb
+run -continue
+run -all
+# ** Fatal: (vsim-7) Failed to open VHDL file "aes_data_in.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 1 ns  Iteration: 0  Process: /aes_tester/line__127 File: /home/cylox/aes_crypto_core/tb/aes_tester.vhd
+# Fatal error in Process line__127 at /home/cylox/aes_crypto_core/tb/aes_tester.vhd line 161
+# 
+# HDL call sequence:
+# Stopped at /home/cylox/aes_crypto_core/tb/aes_tester.vhd 161 Process line__127
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at /home/cylox/aes_crypto_core/tb/aes_tester.vhd 161 Process line__127
+# 
+restart -f
+# ** Error: (vsim-7) Failed to open VHDL file "text_in.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tester
+# ** Error: (vsim-7) Failed to open VHDL file "encoded_text.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tester
+# ** Error: (vsim-7) Failed to open VHDL file "aes_data_in.txt" in r mode.
+# No such file or directory. (errno = ENOENT)
+#    Time: 0 ps  Iteration: 0  Instance: /aes_tester
+run
+run
+# Compile of aes128_fast.vhd was successful.
+# Compile of aes_package.vhd was successful.
+# Compile of key_expander.vhd was successful.
+# Compile of aes_tb_package.vhd was successful.
+# Compile of aes_tester.vhd was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -modelsimini sim/modelsim.ini work.aes_tester
+# vsim -modelsimini sim/modelsim.ini work.aes_tester 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.math_real(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.aes_tb_package(body)
+# Loading work.aes_tester(behavioral)
+# Loading work.aes_package(body)
+# Loading work.aes128_fast(mapping)
+# Loading work.key_expander(expansion)
+add wave -position insertpoint  \
+sim:/aes_tester/data_in_tb
+add wave -position insertpoint  \
+sim:/aes_tester/data_out_tb
+run -all
+# Break key hit 
+# Simulation stop requested.
+restart -f
+run
+run -continue
+run -all
+# Break in Process line__174 at /home/cylox/aes_crypto_core/aes_tester.vhd line 281
+quit -sim
+# Compile of aes128_fast.vhd was successful.
+# Compile of aes_package.vhd was successful.
+# Compile of key_expander.vhd was successful.
+# Compile of aes_tb_package.vhd was successful.
+# Compile of aes_tester.vhd was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -modelsimini sim/modelsim.ini work.aes_tester
+# vsim -modelsimini sim/modelsim.ini work.aes_tester 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.math_real(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.aes_tb_package(body)
+# Loading work.aes_tester(behavioral)
+# Loading work.aes_package(body)
+# Loading work.aes128_fast(mapping)
+# Loading work.key_expander(expansion)
+add wave -position insertpoint  \
+sim:/aes_tester/data_in_tb
+add wave -position insertpoint  \
+sim:/aes_tester/data_out_tb
+run
+run -all
+# Break in Process line__174 at /home/cylox/aes_crypto_core/aes_tester.vhd line 281
+quit -sim
+# Compile of aes128_fast.vhd was successful.
+# Compile of aes_package.vhd was successful.
+# Compile of key_expander.vhd was successful.
+# Compile of aes_tb_package.vhd was successful.
+# Compile of aes_tester.vhd was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -modelsimini sim/modelsim.ini work.aes_tester
+# vsim -modelsimini sim/modelsim.ini work.aes_tester 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.math_real(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.aes_tb_package(body)
+# Loading work.aes_tester(behavioral)
+# Loading work.aes_package(body)
+# Loading work.aes128_fast(mapping)
+# Loading work.key_expander(expansion)
+add wave -position insertpoint  \
+sim:/aes_tester/data_in_tb
+add wave -position insertpoint  \
+sim:/aes_tester/data_out_tb
+run -all
+# Break in Process line__174 at /home/cylox/aes_crypto_core/aes_tester.vhd line 281
+add wave -position insertpoint  \
+sim:/aes_tester/key_tb
+restart -f
+run -all
+# Break in Process line__174 at /home/cylox/aes_crypto_core/aes_tester.vhd line 281
+run
+run
+run -all
+# Break key hit 
+# Simulation stop requested.
+quit -sim
+# Compile of aes128_fast.vhd failed with 1 errors.
+# Compile of aes_package.vhd was successful.
+# Compile of key_expander.vhd was successful.
+# Compile of aes_tb_package.vhd was successful.
+# Compile of aes_tester.vhd was successful.
+# 5 compiles, 1 failed with 1 error. 
+# Compile of aes128_fast.vhd failed with 1 errors.
+# Compile of aes_package.vhd was successful.
+# Compile of key_expander.vhd was successful.
+# Compile of aes_tb_package.vhd was successful.
+# Compile of aes_tester.vhd was successful.
+# 5 compiles, 1 failed with 1 error. 
+# Compile of aes128_fast.vhd was successful.
+vsim -modelsimini sim/modelsim.ini work.aes_tester
+# vsim -modelsimini sim/modelsim.ini work.aes_tester 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.math_real(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.aes_tb_package(body)
+# Loading work.aes_tester(behavioral)
+# Loading work.aes_package(body)
+# Loading work.aes128_fast(mapping)
+# Loading work.key_expander(expansion)
+add wave -position insertpoint  \
+sim:/aes_tester/data_in_tb
+add wave -position insertpoint  \
+sim:/aes_tester/data_out_tb
+add wave -position insertpoint  \
+sim:/aes_tester/key_tb
+run -all
+# Break in Process line__174 at /home/cylox/aes_crypto_core/aes_tester.vhd line 281
+quit -sim
+# Compile of aes128_fast.vhd was successful.
+# Compile of aes_package.vhd was successful.
+# Compile of key_expander.vhd was successful.
+# Compile of aes_tb_package.vhd was successful.
+# Compile of aes_tester.vhd was successful.
+# 5 compiles, 0 failed with no errors. 
+vsim -modelsimini sim/modelsim.ini work.aes_tb_package
+# vsim -modelsimini sim/modelsim.ini work.aes_tb_package 
+# ** Fatal: (vsim-3370) Top-level design unit 'aes_tb_package' must be an ENTITY, CONFIGURATION , MODULE or PROGRAM
+#    Time: 0 ps  Iteration: 0  Root: / File: NOFILE
+# FATAL ERROR while loading design
+# Error loading design
